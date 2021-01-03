@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Apex Track/XC</title>
+        <meta name="description" content="Apex Track/XC Home"/>
+        <meta charset="utf-8" />
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="index.js"></script>
+        
+    </head>
+    <body>
+        <!-- the banner and naviagtion bar for the page -->
+        <header>
+            <div id="banner" class="centered">
+                <img id="bannerimage" src="bannerimage.png" alt="Apex High Logo">
+            </div>
+            <div id="navbar">
+                <div class="navcell navcellSelected"><a class="navlink navlinkSelected" href="index.html">Home</a></div>
+                <div class="navcell"><a class="navlink" href="About.html">About</a></div>
+                <div class="navcell"><a class="navlink" href="Staff.html">Staff</a></div>
+                <div class="navcell"><a class="navlink" href="Calendar.html">Calendar</a></div>
+                <div class="navcell"><a class="navlink" href="SignUp.html">Sign-Up</a></div>
+                <div class="navcell"><a class="navlink" href="RaceCalculator.html">Race Calculator</a></div>
+            </div>
+        </header>
+        <!-- holds all content for page -->
+        <main>
+            <div class="content">
+                <div class="text">
+                    <h1 id="homeTitle">Apex High Track/XC Home Page</h1>
+                    <!-- images swapped out every 5 seconds using bxSlider plugin -->
+                    <div id="slidercontainer">
+                        <div id="slider">
+                            <div><img class="homeimage" src="ApexHigh.jpg" alt="Photo of Apex High School"></div>
+                            <div><img class="homeimage" src="apextrack.png" alt="Photo of the AHS Track"></div>
+                            <div><img class="homeimage" src="AHSEntrance.jpg" alt="The entrance to Apex High School"></div>
+                            <div><img class="homeimage" src="CCLogo.png" alt="Generic cross country logo"></div>
+                            <div><img class="homeimage" src="NCAA.jpg" alt="Logo for the NCAA"></div>
+                        </div>
+                    </div>  
+                    <!-- brief site summary -->
+                    <div id="homeContent">
+                        <p>
+                            Welcome to the Apex High Track and Cross Country Homepage!
+                            This site allows students and parents to learn about the Apex High 
+                            Cross Country, Winter Track, and Spring Track teams,
+                            sign up for the teams, and use the Race Calculator to figure out 
+                            what mile pace they need to run for a certain race. Students and
+                            parents can visit the Calendar page, which has times and locations 
+                            for upcoming races, or the Staff Page, to learn about the faculty 
+                            involved with the teams.
+                            <br>
+                        </p>
+                        <!-- links to content related to the team, some of the info requries jumping through multiple pages 
+                            so providing links makes it easy for users to find the info if it isn't on the site -->
+                        <ul>
+                            <li><a href= "https://www.wcpss.net/apexhs">Apex High School HomePage</a></li>
+                            <li><a href= "https://www.wcpss.net/domain/6442">Apex High School Athletics Page</a></li>
+                            <li><a href= "https://www.wakecountyathletics.com/page/show/1954821-sports-schedules-and-calendars">Apex High School Athletic Schedule(s)</a></li>
+                            <li><a href= "https://en.wikipedia.org/wiki/Apex_High_School">Apex High School Wikipedia Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- displays additonal info about the creator of the site and the client -->
+        <footer>
+            <p>
+                Site Developed by: Nathan Adams<br>
+                Site Developed for: Apex High Track/XC Teams
+            </p>
+        </footer>
+    </body>
+</html>

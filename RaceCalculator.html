@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Race Calculator</title>
+        <meta name="description" content="Apex Track/XC Calculator" />
+        <meta charset="utf-8" />
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="RaceCalculator.js"></script>
+    </head>
+    <body>
+        <!-- the banner and naviagtion bar for the page -->
+        <header>
+            <div id="banner" class="centered">
+                <img id="bannerimage" src="bannerimage.png" alt="Apex High Logo">
+            </div>
+            <div id="navbar">
+                <div class="navcell"><a class="navlink" href="index.html">Home</a></div>
+                <div class="navcell"><a class="navlink" href="About.html">About</a></div>
+                <div class="navcell"><a class="navlink" href="Staff.html">Staff</a></div>
+                <div class="navcell"><a class="navlink" href="Calendar.html">Calendar</a></div>
+                <div class="navcell"><a class="navlink" href="SignUp.html">Sign-Up</a></div>
+                <div class="navcell navcellSelected"><a class="navlink navlinkSelected" href="RaceCalculator.html">Race Calculator</a></div>
+            </div>
+        </header>
+        <!-- holds all content for page -->
+        <main>
+            <div class="content">
+                <!-- forms for the calculator, user plugs in distance and desired time, the JavaScript
+                     will then calculate the pace and replace the ##:## with the result by editing the html -->
+                <img class="image rcImage" src="AHSEntrance.jpg" alt="The entrance to Apex High School">
+                <img class="image rcImage" src="ApexHigh.jpg" alt="Photo of Apex High School">
+                <div class="text">
+                    <h1>Race Pace Calculator</h1>
+                    <form id="submitForm">
+                        <label for="distance">Distance to Run in Meters:</label>
+                            <input type="text" id="distance" placeholder="Ex. 1600" required>
+                        <br>
+                        <br>
+                        <label for="time">Desired Time:</label>
+                            <input type="text" id="time" placeholder="Ex. (mm:ss)" required>
+                        <br>
+                        <hr>
+                        <input id="submit" type="submit" value="Calculate Pace">
+                    </form>
+                    <h3 id="result">The mile pace you need to run is: ##:## </h3>
+                </div>
+            </div>
+        </main>
+        <!-- displays additonal info about the creator of the site and the client -->
+        <footer>
+                <p>
+                    Site Developed by: Nathan Adams<br>
+                    Site Developed for: Apex High Track/XC Teams
+                </p>
+        </footer>
+    </body>
+</html>

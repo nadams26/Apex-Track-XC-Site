@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign-Up</title>
+        <meta name="description" content="Apex Track/XC Sign-Up" />
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script src="simple-input-toggle/js/jquery.toggleinput.js"></script>
+
+        <script src="SignUp.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="simple-input-toggle/css/jquery.toggleinput.css">
+    </head>
+    <body>
+        <!-- the banner and naviagtion bar for the page -->
+        <header>
+            <div id="banner" class="centered">
+                <img id="bannerimage" src="bannerimage.png" alt="Apex High Logo">
+            </div>
+            <div id="navbar">
+                <div class="navcell"><a class="navlink" href="index.html">Home</a></div>
+                <div class="navcell"><a class="navlink" href="About.html">About</a></div>
+                <div class="navcell"><a class="navlink" href="Staff.html">Staff</a></div>
+                <div class="navcell"><a class="navlink" href="Calendar.html">Calendar</a></div>
+                <div class="navcell navcellSelected"><a class="navlink navlinkSelected" href="SignUp.html">Sign-Up</a></div>
+                <div class="navcell"><a class="navlink" href="RaceCalculator.html">Race Calculator</a></div>
+            </div>
+        </header>
+        <!-- holds all content for page -->
+        <main>
+            <div class="content">
+                <!-- set of forms for signing up for a team, some fields are required, 
+                     implemented validation for email field and capped the length of the phone number field.
+                     this is also where the AJAX will be implemented, by sending the form data to a database
+                     in json format -->
+                <div class="text">
+                    <div><img class="image signupImage" src="apextrack.png" alt="Photo of the AHS Track"></div>
+                    <h1>Sign-Up Page</h1>
+                    <form id="submitForm">
+                        <!-- div container holding the radio inputs that are modified by the
+                             simple-input-toggle jQuery plugin -->
+                        <div id="sportSwitch">
+                            <div>
+                                <label id="XClabel" for="XC">
+                                    <input type="radio" id="XC" checked>
+                                    Cross Country
+                                </label>
+                                <label id="tracklabel" for="track">
+                                    <input type="radio" id="track">
+                                    Track & Field
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <label for="name">Name (Required):</label>
+                            <input type="text" id="name" placeholder="Enter name here:" required>
+                        <br>
+                        <br>
+                        <label for="email">Email (Required):</label>
+                            <input type="email" id="email" placeholder="Enter email here:" required>
+                        <br>
+                        <br>
+                        <label for="phone">Phone Number (Required):</label>
+                            <input type="text" id="phone" placeholder="ex. 9196002888" maxlength="10" required>
+                        <br>
+                        <br>
+                        <!-- Event field is hidden when Cross Country is selected and shown when Track & Field 
+                             is selected; also holds the input that is used with the Autocomplete jQuery-UI widget -->
+                        <div id="eventInput" hidden>
+                            <label for="event">Event (Spring/Winter Track Only):</label>
+                                <input type="text" id="event" placeholder="ex. '1600m' or 'Pole Vault'">
+                        </div>
+                        <br>
+                        <br>
+                        <hr>
+                        <input id="submit" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- displays additonal info about the creator of the site and the client -->
+        <footer>
+                <p>
+                    Site Developed by: Nathan Adams<br>
+                    Site Developed for: Apex High Track/XC Teams
+                </p>
+        </footer>
+    </body>
+</html>

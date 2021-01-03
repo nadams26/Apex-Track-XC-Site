@@ -1,0 +1,18 @@
+{"aboutText":[
+	{
+        "pageTitle":"Staff Page",
+        "pageInfo": "Provides a listing of the coaches and staff involved with the cross country and track teams so that parents and students can know who are involved with the team and can contact them if they want to. This page has a list of the coaches and staff involved with the team, with each entry listing the name, email, and phone number of each coach and staff."
+    },
+    {
+        "pageTitle":"Calendar Page",
+        "pageInfo": "Enables students and parents to look forward and see times and locations for the races that the team participates in and other community races like charity 5K races. The page has a traditional calendar which lists events on the days of the month in which they occur, and allows users to switch months to look forward at future events. Each event also has an attached name, date, and location for the event."
+    },
+    {
+        "pageTitle":"Sign-Up Page",
+        "pageInfo": "Enables students to sign up for the cross country and track teams by putting in their information into a sign-up form. The page has sets of text fields with labels that prompt students to input information such as their name, email, phone number, and if they’re signing up for track, they have to input their preferred event to compete in."
+    },
+    {
+        "pageTitle":"Race Calculator",
+        "pageInfo": "Enables students to find what mile pace they need to run at in order to complete a race in the time they desire. The page has a calculator that lets students figure out their needed mile pace for races, depending on how many meters the race goes for and the time they want to run the race in. The page also displays the end result of the calculation, which is the mile pace that the race needs to be ran in."
+    }
+]}

@@ -1,0 +1,133 @@
+/* body */
+body{
+    margin:0px;
+    font-family:"Arial", "Calibri", serif;
+    background-color:#bbbbbb;
+    height:100%
+}
+/* banner that holds the school logo */
+#banner{
+    text-align:center;
+    background-color:#383838;
+    border:5px solid #ffd24d;
+}
+/* the school logo inside the banner */
+#bannerimage{
+    width:125px;
+}
+/* navigation bar */
+#navbar{
+   width:100%;
+}
+/* cells in the navigation bar */
+.navcell{
+    width:16.6666666667%;
+    float:left;
+    background-color:#ffd24d;
+    border-width: 2px 0px 2px 0px;
+    border-color:#383838;
+    border-style:solid;
+    text-align:center;
+    padding: 4px 0px 4px 0px;
+}
+.navcellSelected{
+    background-color:#383838;
+}
+/* links in the navbar cells */
+.navlink{
+    text-decoration:none;
+    color:#383838;
+    font-weight:bold;
+}
+.navlinkSelected{
+    color:white;
+}
+/* page content */
+.content{
+    width:100%;
+    text-align:center;
+}
+/* general images */
+.image{
+    margin-top: 2%;
+    width: 50%;
+    border: 10px solid #383838;
+}
+/* page text */
+.text{
+    text-align:left;
+    padding: 20px;
+    margin:10px;
+    border: 2px solid #383838;
+    background-color:white;
+}
+/* links within the page text */
+.text a{
+    color:#383838;
+}
+/* submit button */
+#submit{
+    border:2px solid #ffd24d;
+    color:white;
+    background-color:#383838;
+    padding:10px;
+}
+/* footer */
+footer{
+    background-color:#383838;
+    color:white;
+    text-align:center;
+}
+/* paragraphs in the footer */
+footer p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* images of coaches on staff page */
+.coach{
+    width:20%;
+}
+/* styling for bxSlider plugin */
+.bx-wrapper img {
+    margin: 0 auto;
+}
+#slidercontainer{
+    width: 80%;
+    margin: 0 auto;
+}
+.homeimage{
+    width:50%;
+}
+/* styling for FullCalendar */
+#calendarcontainer{
+    max-width: 850px;
+    margin: 0 auto;
+}
+/* Race Calculator images*/
+.rcImage{
+    width: 25%;
+}
+/* SignUp image */
+.signupImage{
+    width: 25%;
+    float: right;
+}
+/* styling for the calendar event markers */
+.fc-event, .fc-event-dot {
+    background-color: #ffd24d;
+    border: 1px solid black;
+}
+.fc-event:hover {
+    color: white;
+    background-color: #383838;
+    text-decoration: none;
+}
+.fc-button:disabled {
+    opacity: 0.75;
+    background-color: black;
+}
+/* styling for text on index.html */
+#homeContent, #homeTitle{
+    padding-right: 10%;
+    padding-left: 10%;
+}
